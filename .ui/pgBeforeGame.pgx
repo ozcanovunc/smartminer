@@ -3,28 +3,32 @@
 		{
 			"type": "Page",
 			"id": "323b-a9e7-6bf7-3da8",
-			"userProps": {},
+			"initialized": true,
+			"userProps": {
+				"orientation": "AUTO"
+			},
+			"className": " .page",
+			"version": "6.5.3-rc.16",
 			"props": {
 				"name": "pgBeforeGame",
-				"parent": null,
 				"children": [
 					"a5f5-a050-81cf-132c",
-					"bb7f-d4af-2fc7-6f8b"
+					"bb7f-d4af-2fc7-6f8b",
+					"f572-f540-c961-5e94"
 				],
-				"orientation": "PORTRAIT"
-			},
-			"version": "6.5.3-rc.16",
-			"initialized": false
+				"parent": null,
+				"orientation": "AUTO"
+			}
 		},
 		{
 			"type": "StatusBar",
 			"id": "a5f5-a050-81cf-132c",
 			"userProps": {},
+			"className": " .statusBar",
 			"props": {
 				"name": "statusBar",
-				"parent": "323b-a9e7-6bf7-3da8",
 				"children": [],
-				"visible": true,
+				"parent": "323b-a9e7-6bf7-3da8",
 				"isRemovable": false
 			}
 		},
@@ -34,59 +38,131 @@
 			"userProps": {
 				"title": "newPage001"
 			},
+			"className": " .headerBar",
 			"props": {
 				"name": "headerBar",
+				"title": "newPage001",
+				"children": [],
 				"parent": "323b-a9e7-6bf7-3da8",
-				"children": [],
-				"title": "newPage001",
-				"visible": true,
 				"isRemovable": false
 			}
-		}
-	],
-	"componentByID": {
-		"3664-ac23-e354-68e4": {
-			"type": "Page",
-			"id": "3664-ac23-e354-68e4",
+		},
+		{
+			"type": "FlexLayout",
+			"id": "f572-f540-c961-5e94",
 			"userProps": {},
+			"className": ".flexLayout .flRoot",
 			"props": {
-				"name": "newPage001",
-				"parent": null,
+				"name": "flMain",
 				"children": [
-					"5a25-ef22-d1be-9cb5",
-					"5ff0-2002-4175-b70f"
+					"afc3-e37c-a1c3-d7e4",
+					"06ad-793a-0952-ad87",
+					"6ba8-9601-2b24-8128"
 				],
-				"orientation": "PORTRAIT"
-			},
-			"version": "6.5.3-rc.16",
-			"initialized": false
-		},
-		"5a25-ef22-d1be-9cb5": {
-			"type": "StatusBar",
-			"id": "5a25-ef22-d1be-9cb5",
-			"userProps": {},
-			"props": {
-				"name": "statusBar",
-				"parent": "3664-ac23-e354-68e4",
-				"children": [],
-				"visible": true,
-				"isRemovable": false
+				"parent": "323b-a9e7-6bf7-3da8"
 			}
 		},
-		"5ff0-2002-4175-b70f": {
-			"type": "HeaderBar",
-			"id": "5ff0-2002-4175-b70f",
-			"userProps": {
-				"title": "newPage001"
-			},
+		{
+			"type": "FlexLayout",
+			"id": "afc3-e37c-a1c3-d7e4",
+			"userProps": {},
+			"className": ".flexLayout #pgBeforeGame-flWrapper",
 			"props": {
-				"name": "headerBar",
-				"parent": "3664-ac23-e354-68e4",
+				"name": "flPart1",
 				"children": [],
-				"title": "newPage001",
-				"visible": true,
-				"isRemovable": false
+				"parent": "f572-f540-c961-5e94"
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "06ad-793a-0952-ad87",
+			"userProps": {},
+			"className": ".flexLayout #pgBeforeGame-flWrapper-main",
+			"props": {
+				"name": "flPart2",
+				"children": [
+					"e3aa-aa94-780a-3ad7",
+					"00c1-9d7c-cf6c-71e4"
+				],
+				"parent": "f572-f540-c961-5e94"
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "6ba8-9601-2b24-8128",
+			"userProps": {},
+			"className": ".flexLayout #pgBeforeGame-flWrapper",
+			"props": {
+				"name": "flPart3",
+				"children": [],
+				"parent": "f572-f540-c961-5e94"
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "e3aa-aa94-780a-3ad7",
+			"userProps": {},
+			"className": ".flexLayout #pgBeforeGame-flText",
+			"props": {
+				"name": "flText",
+				"children": [
+					"5d55-09f3-53e8-9d1f"
+				],
+				"parent": "06ad-793a-0952-ad87"
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "00c1-9d7c-cf6c-71e4",
+			"userProps": {},
+			"className": ".flexLayout #pgBeforeGame-flInfo",
+			"props": {
+				"name": "flInfo",
+				"children": [
+					"d991-0130-deda-5025",
+					"78cc-6554-69ee-08d9"
+				],
+				"parent": "06ad-793a-0952-ad87"
+			}
+		},
+		{
+			"type": "Label",
+			"id": "5d55-09f3-53e8-9d1f",
+			"userProps": {
+				"text": "T Y P E   Y O U R   N I C K",
+				"font": {
+					"family": "Nunito"
+				}
+			},
+			"className": ".label #pgBeforeGame-lblText",
+			"props": {
+				"name": "lblText",
+				"text": "T Y P E   Y O U R   N I C K",
+				"children": [],
+				"parent": "e3aa-aa94-780a-3ad7"
+			}
+		},
+		{
+			"type": "TextBox",
+			"id": "d991-0130-deda-5025",
+			"userProps": {},
+			"className": ".textBox #pgBeforeGame-tbNicj",
+			"props": {
+				"name": "tbNick",
+				"children": [],
+				"parent": "00c1-9d7c-cf6c-71e4"
+			}
+		},
+		{
+			"type": "Button",
+			"id": "78cc-6554-69ee-08d9",
+			"userProps": {},
+			"className": ".button #pgBeforeGame-btnGo",
+			"props": {
+				"name": "btnGo",
+				"children": [],
+				"parent": "00c1-9d7c-cf6c-71e4"
 			}
 		}
-	}
+	]
 }

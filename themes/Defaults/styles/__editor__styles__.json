@@ -32,5 +32,85 @@
 		"flexProps": {
 			"justifyContent": "CENTER"
 		}
+	},
+	".headerBar": {
+		"visible": false
+	},
+	".statusBar": {
+		"visible": false
+	},
+	".page": {
+		"backgroundColor": "rgba( 0, 0, 0, 1 )"
+	},
+	"#pgBeforeGame-flWrapper": {
+		"width": null,
+		"height": null,
+		"flexProps": {
+			"flexGrow": 1
+		},
+		"backgroundColor": "rgba( 255, 255, 255, 0 )",
+		"+Device:Device.orientation === \"landscape\"": {
+			"flexProps": {
+				"flexGrow": 0
+			}
+		}
+	},
+	"#pgBeforeGame-flWrapper-main": {
+		"width": null,
+		"height": null,
+		"flexProps": {
+			"flexGrow": 1
+		},
+		"backgroundColor": "rgba( 255, 255, 255, 0 )"
+	},
+	"#pgBeforeGame-flText": {
+		"width": null,
+		"height": null,
+		"flexProps": {
+			"flexGrow": 1
+		},
+		"backgroundColor": "rgba( 255, 255, 255, 0 )",
+		"+Device:Device.orientation === \"landscape\"": {
+			"flexProps": {
+				"flexGrow": 1
+			}
+		}
+	},
+	"#pgBeforeGame-flInfo": {
+		"width": null,
+		"height": null,
+		"flexProps": {
+			"flexGrow": 2
+		},
+		"backgroundColor": "rgba( 255, 255, 255, 0 )",
+		"+Device:Device.orientation === \"landscape\"": {
+			"flexProps": {
+				"flexGrow": 2
+			}
+		}
+	},
+	"#pgBeforeGame-lblText": {
+		"flexProps": {
+			"flexGrow": 1
+		},
+		"textAlignment": "MIDCENTER",
+		"width": null,
+		"height": null,
+		"backgroundColor": "rgba( 255, 255, 255, 0 )",
+		"textColor": "rgba( 255, 255, 255, 1 )"
+	},
+	"#pgBeforeGame-tbNicj": {
+		"width": null,
+		"marginLeft": 50,
+		"marginRight": 50,
+		"borderRadius": 20,
+		"height": 50
+	},
+	"#pgBeforeGame-btnGo": {
+		"marginLeft": 50,
+		"marginRight": 50,
+		"width": null,
+		"borderRadius": 20,
+		"height": 50
 	}
 }
