@@ -1,0 +1,135 @@
+{
+	"components": [
+		{
+			"type": "Page",
+			"id": "80eb-e142-756a-8676",
+			"initialized": true,
+			"userProps": {
+				"backgroundColor": "rgba( 0, 0, 0, 1 )"
+			},
+			"className": ".page",
+			"version": "6.5.3-rc.16",
+			"props": {
+				"name": "pgLogin",
+				"children": [
+					"0ed5-5f78-d155-c0aa",
+					"742b-33d4-cccb-940a",
+					"005e-cdba-ad19-2769"
+				],
+				"parent": null,
+				"orientation": "PORTRAIT"
+			}
+		},
+		{
+			"type": "StatusBar",
+			"id": "0ed5-5f78-d155-c0aa",
+			"userProps": {
+				"visible": false
+			},
+			"className": ".statusBar",
+			"props": {
+				"name": "statusBar",
+				"children": [],
+				"parent": "80eb-e142-756a-8676",
+				"isRemovable": false
+			}
+		},
+		{
+			"type": "HeaderBar",
+			"id": "742b-33d4-cccb-940a",
+			"userProps": {
+				"title": "newPage001",
+				"visible": false
+			},
+			"className": ".headerBar",
+			"props": {
+				"name": "headerBar",
+				"title": "newPage001",
+				"children": [],
+				"parent": "80eb-e142-756a-8676",
+				"isRemovable": false
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "005e-cdba-ad19-2769",
+			"userProps": {},
+			"className": ".flexLayout .flRoot",
+			"props": {
+				"name": "flRoot",
+				"children": [
+					"22ad-22bb-06da-8f99",
+					"9cc7-ca4e-6af0-453c",
+					"32a9-3d1a-7d16-f89f"
+				],
+				"parent": "80eb-e142-756a-8676"
+			}
+		},
+		{
+			"type": "ImageView",
+			"id": "22ad-22bb-06da-8f99",
+			"userProps": {
+				"image": "diamod.png",
+				"imageFillType": "ASPECTFIT",
+				"width": null
+			},
+			"className": ".imageView",
+			"props": {
+				"name": "imgMain",
+				"children": [],
+				"parent": "005e-cdba-ad19-2769"
+			}
+		},
+		{
+			"type": "Label",
+			"id": "9cc7-ca4e-6af0-453c",
+			"userProps": {
+				"text": "S M A R T M I N E R",
+				"usePageVariable": true,
+				"font": {
+					"family": "Nunito",
+					"size": 26
+				}
+			},
+			"className": ".label #pgLogin-lblMain",
+			"props": {
+				"name": "lblMain",
+				"text": "S M A R T M I N E R",
+				"usePageVariable": true,
+				"children": [],
+				"parent": "005e-cdba-ad19-2769"
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "32a9-3d1a-7d16-f89f",
+			"userProps": {},
+			"className": ".flexLayout #pgLogin-flButton",
+			"props": {
+				"name": "flButton",
+				"children": [
+					"cbb7-eca2-1e90-235c"
+				],
+				"parent": "005e-cdba-ad19-2769"
+			}
+		},
+		{
+			"type": "Button",
+			"id": "cbb7-eca2-1e90-235c",
+			"userProps": {
+				"text": "GO",
+				"left": 0,
+				"top": 0,
+				"usePageVariable": true
+			},
+			"className": ".button #pgLogin-btnStart",
+			"props": {
+				"name": "btnStart",
+				"text": "GO",
+				"usePageVariable": true,
+				"children": [],
+				"parent": "32a9-3d1a-7d16-f89f"
+			}
+		}
+	]
+}

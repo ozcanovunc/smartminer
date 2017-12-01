@@ -1,0 +1,34 @@
+{
+	".flRoot": {
+		"backgroundColor": "rgba( 255, 255, 255, 0 )",
+		"flexProps": {
+			"flexGrow": 1,
+			"justifyContent": "SPACE_AROUND"
+		},
+		"width": null,
+		"height": null
+	},
+	"#pgLogin-lblMain": {
+		"backgroundColor": "rgba( 255, 255, 255, 0 )",
+		"textColor": "rgba( 255, 255, 255, 1 )",
+		"textAlignment": "MIDCENTER",
+		"width": null,
+		"font": {}
+	},
+	"#pgLogin-btnStart": {
+		"borderRadius": 20,
+		"backgroundColor": "rgba( 155, 155, 155, 1 )",
+		"width": null,
+		"height": 50,
+		"marginLeft": 50,
+		"marginRight": 50,
+		"flexProps": {}
+	},
+	"#pgLogin-flButton": {
+		"backgroundColor": "rgba( 255, 255, 255, 0 )",
+		"width": null,
+		"flexProps": {
+			"justifyContent": "CENTER"
+		}
+	}
+}

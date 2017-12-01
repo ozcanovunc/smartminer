@@ -28,7 +28,6 @@ themeConfig.themes.forEach(function(name) {
 
 Application.theme = createThemeContextBound(themeSources);
 
-// Define routes and go to initial page of application
-Router.add("page1", require("./pages/page1"));
-Router.add("page2", require("./pages/page2"));
-Router.go("page1");
+//Router.add("LoginPageFB001", require("./pages/loginPageFB001"));
+Router.add("pgLogin", require("./pages/pgLogin"));
+Router.go("pgLogin");

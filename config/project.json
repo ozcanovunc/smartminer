@@ -1,106 +1,107 @@
 {
-	"info": {
-		"name": "Smartface Empty Workspace",
-		"company": "Smartface User",
-		"webSite": "https://www.smartface.io",
-		"version": "1.0.0",
-		"runtimeVersion": "1100",
-		"description": "This is Smartface's default empty project. You can click to Run on Device button to see it on your device."
-	},
-	"config": {
-		"cache": {
-			"size": 50
-		},
-		"debug": {
-			"logs": false
-		},
-		"orientation": {
-			"portrait": true,
-			"upsideDown": false,
-			"landScapeLeft": false,
-			"landScapeRight": false
-		}
-	},
-	"api": {
-		"facebook": {
-			"appUID": "",
-			"appSecret": ""
-		},
-		"twitter": {
-			"consumerKey": "",
-			"consumerSecret": ""
-		},
-		"googleMaps": {
-			"androidKey": "01u81e3cP5lidl1HRJ55hoBH0N5_Kmlvku4EIYg",
-			"iosKey": ""
-		},
-		"adMob": {
-			"publisherId": ""
-		},
-		"googleCloudMessaging": {
-			"senderID": ""
-		},
-		"googlePlayServices": {
-			"inAppPurchaseProductKey": ""
-		}
-	},
-	"workspace": {
-		"autoUpdatePlayers": true
-	},
-	"build": {
-		"input": {
-			"ios": {
-				"scripts": "scripts",
-				"images": "images/iOS",
-				"assets": "assets",
-				"infoPlist": "config/iOS/Info.plist",
-				"urlIdentifier": "",
-				"urlSchemes": "",
-				"plugins": {
-					"codereaderios": {
-						"url": "https://az793023.vo.msecnd.net/smartface-bin/plugins/CodeReader/iOS/2.0.0/codereaderios.zip",
-						"path": "plugins/iOS/codereaderios.zip",
-						"active": false
-					}
-				},
-				"playerPath": null
-			},
-			"android": {
-				"scripts": "scripts",
-				"images": "images/Android",
-				"assets": "assets",
-				"manifest": "config/Android/AndroidManifest.xml",
-				"packageProfiles": "config/Android/PackageProfiles.xml",
-				"sign": {
-					"keystoreFile": "config/Android/smfdefault.keystore",
-					"keystorePass": "smartface",
-					"aliasName": "smartface",
-					"keyPass": "smartface"
-				},
-				"plugins": {
-					"smfimagecode": {
-						"url": "https://az793023.vo.msecnd.net/smartface-bin/plugins/CodeReader/Android/2.0.0/CodeReaderAndroid.zip",
-						"path": "plugins/Android/CodeReaderAndroid.zip",
-						"active": false
-					}
-				},
-				"playerPath": null
-			},
-			"keys": {
-				"project3DesKey": "",
-				"projectEncryptedKey": ""
-			}
-		},
-		"output": {
-			"ios": {
-				"outputFolder": "output/iOS",
-				"bundleIdentifier": "io.smartface.demo"
-			},
-			"android": {
-				"outputFolder": "output/Android",
-				"packageName": "io.smartface.demo"
-			}
-		},
-		"tempFolder": "output/.tmp"
-	}
+    "info": {
+        "name": "Smartminer",
+        "company": "Smartface",
+        "webSite": "https://www.smartface.io",
+        "version": "1.0.0",
+        "runtimeVersion": "1100",
+        "description": "Client side of Smartface hackathon project '17"
+    },
+    "config": {
+        "cache": {
+            "size": 50
+        },
+        "debug": {
+            "logs": false
+        },
+        "orientation": {
+            "portrait": true,
+            "upsideDown": false,
+            "landScapeLeft": false,
+            "landScapeRight": false
+        }
+    },
+    "api": {
+        "facebook": {
+            "appUID": "",
+            "appSecret": ""
+        },
+        "twitter": {
+            "consumerKey": "",
+            "consumerSecret": ""
+        },
+        "googleMaps": {
+            "androidKey": "01u81e3cP5lidl1HRJ55hoBH0N5_Kmlvku4EIYg",
+            "iosKey": ""
+        },
+        "adMob": {
+            "publisherId": ""
+        },
+        "googleCloudMessaging": {
+            "senderID": ""
+        },
+        "googlePlayServices": {
+            "inAppPurchaseProductKey": ""
+        }
+    },
+    "workspace": {
+        "autoUpdatePlayers": true
+    },
+    "build": {
+        "input": {
+            "ios": {
+                "scripts": "scripts",
+                "images": "images/iOS",
+                "assets": "assets",
+                "infoPlist": "config/iOS/Info.plist",
+                "urlIdentifier": "",
+                "urlSchemes": "",
+                "plugins": {
+                    "codereaderios": {
+                        "url": "https://az793023.vo.msecnd.net/smartface-bin/plugins/CodeReader/iOS/2.0.0/codereaderios.zip",
+                        "path": "plugins/iOS/codereaderios.zip",
+                        "active": false
+                    }
+                },
+                "playerPath": null
+            },
+            "android": {
+                "scripts": "scripts",
+                "images": "images/Android",
+                "assets": "assets",
+                "manifest": "config/Android/AndroidManifest.xml",
+                "packageProfiles": "config/Android/PackageProfiles.xml",
+                "sign": {
+                    "keystoreFile": "config/Android/smfdefault.keystore",
+                    "keystorePass": "smartface",
+                    "aliasName": "smartface",
+                    "keyPass": "smartface"
+                },
+                "plugins": {
+                    "smfimagecode": {
+                        "url": "https://az793023.vo.msecnd.net/smartface-bin/plugins/CodeReader/Android/2.0.0/CodeReaderAndroid.zip",
+                        "path": "plugins/Android/CodeReaderAndroid.zip",
+                        "active": false
+                    }
+                },
+                "playerPath": null
+            },
+            "keys": {
+                "project3DesKey": "+zk4RQ+nen0/Rek7t4fWa66RRFW1CiU+",
+                "projectEncryptedKey": "/ncujR4aTVupkOyOPAxtRo+LbUegNp1pXXA714L9JAISTOYNVis4BmZreGdWYrnkq5Kwg4wVbwobMBO7Z+/EFFgvrbRBXBYWnH6FRk2r9+TdDbJFD2BGagl9kfsItFPD87dXSlLibzkbLKctpBsdrwLdIpU4ZP/fXanHP0RZgIUA"
+            }
+        },
+        "output": {
+            "ios": {
+                "outputFolder": "output/iOS",
+                "bundleIdentifier": "io.smartface.smartminer"
+            },
+            "android": {
+                "outputFolder": "output/Android",
+                "packageName": "io.smartface.smartminer"
+            }
+        },
+        "tempFolder": "output/.tmp"
+    },
+    "projectID": "a719d446-f4fe-41b0-b691-0e9ddd365601"
 }
