@@ -1,0 +1,92 @@
+{
+	"components": [
+		{
+			"type": "Page",
+			"id": "323b-a9e7-6bf7-3da8",
+			"userProps": {},
+			"props": {
+				"name": "pgBeforeGame",
+				"parent": null,
+				"children": [
+					"a5f5-a050-81cf-132c",
+					"bb7f-d4af-2fc7-6f8b"
+				],
+				"orientation": "PORTRAIT"
+			},
+			"version": "6.5.3-rc.16",
+			"initialized": false
+		},
+		{
+			"type": "StatusBar",
+			"id": "a5f5-a050-81cf-132c",
+			"userProps": {},
+			"props": {
+				"name": "statusBar",
+				"parent": "323b-a9e7-6bf7-3da8",
+				"children": [],
+				"visible": true,
+				"isRemovable": false
+			}
+		},
+		{
+			"type": "HeaderBar",
+			"id": "bb7f-d4af-2fc7-6f8b",
+			"userProps": {
+				"title": "newPage001"
+			},
+			"props": {
+				"name": "headerBar",
+				"parent": "323b-a9e7-6bf7-3da8",
+				"children": [],
+				"title": "newPage001",
+				"visible": true,
+				"isRemovable": false
+			}
+		}
+	],
+	"componentByID": {
+		"3664-ac23-e354-68e4": {
+			"type": "Page",
+			"id": "3664-ac23-e354-68e4",
+			"userProps": {},
+			"props": {
+				"name": "newPage001",
+				"parent": null,
+				"children": [
+					"5a25-ef22-d1be-9cb5",
+					"5ff0-2002-4175-b70f"
+				],
+				"orientation": "PORTRAIT"
+			},
+			"version": "6.5.3-rc.16",
+			"initialized": false
+		},
+		"5a25-ef22-d1be-9cb5": {
+			"type": "StatusBar",
+			"id": "5a25-ef22-d1be-9cb5",
+			"userProps": {},
+			"props": {
+				"name": "statusBar",
+				"parent": "3664-ac23-e354-68e4",
+				"children": [],
+				"visible": true,
+				"isRemovable": false
+			}
+		},
+		"5ff0-2002-4175-b70f": {
+			"type": "HeaderBar",
+			"id": "5ff0-2002-4175-b70f",
+			"userProps": {
+				"title": "newPage001"
+			},
+			"props": {
+				"name": "headerBar",
+				"parent": "3664-ac23-e354-68e4",
+				"children": [],
+				"title": "newPage001",
+				"visible": true,
+				"isRemovable": false
+			}
+		}
+	}
+}

@@ -13,16 +13,18 @@
 		"textColor": "rgba( 255, 255, 255, 1 )",
 		"textAlignment": "MIDCENTER",
 		"width": null,
-		"font": {}
+		"font": {},
+		"alpha": 0
 	},
 	"#pgLogin-btnStart": {
 		"borderRadius": 20,
-		"backgroundColor": "rgba( 155, 155, 155, 1 )",
+		"backgroundColor": "rgba( 87, 87, 87, 1 )",
 		"width": null,
 		"height": 50,
 		"marginLeft": 50,
 		"marginRight": 50,
-		"flexProps": {}
+		"flexProps": {},
+		"alpha": 0
 	},
 	"#pgLogin-flButton": {
 		"backgroundColor": "rgba( 255, 255, 255, 0 )",

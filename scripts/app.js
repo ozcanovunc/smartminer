@@ -28,6 +28,6 @@ themeConfig.themes.forEach(function(name) {
 
 Application.theme = createThemeContextBound(themeSources);
 
-//Router.add("LoginPageFB001", require("./pages/loginPageFB001"));
 Router.add("pgLogin", require("./pages/pgLogin"));
+Router.add("pgBeforeGame", require("./pages/pgBeforeGame"));
 Router.go("pgLogin");

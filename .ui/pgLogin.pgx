@@ -117,15 +117,18 @@
 			"type": "Button",
 			"id": "cbb7-eca2-1e90-235c",
 			"userProps": {
-				"text": "GO",
+				"text": "G O",
 				"left": 0,
 				"top": 0,
-				"usePageVariable": true
+				"usePageVariable": true,
+				"font": {
+					"family": "Nunito"
+				}
 			},
 			"className": ".button #pgLogin-btnStart",
 			"props": {
 				"name": "btnStart",
-				"text": "GO",
+				"text": "G O",
 				"usePageVariable": true,
 				"children": [],
 				"parent": "32a9-3d1a-7d16-f89f"
