@@ -5,7 +5,7 @@
 			"id": "323b-a9e7-6bf7-3da8",
 			"initialized": true,
 			"userProps": {
-				"orientation": "AUTO"
+				"orientation": "PORTRAIT"
 			},
 			"className": " .page",
 			"version": "6.5.3-rc.16",
@@ -17,7 +17,7 @@
 					"f572-f540-c961-5e94"
 				],
 				"parent": null,
-				"orientation": "AUTO"
+				"orientation": "PORTRAIT"
 			}
 		},
 		{
@@ -145,10 +145,17 @@
 		{
 			"type": "TextBox",
 			"id": "d991-0130-deda-5025",
-			"userProps": {},
+			"userProps": {
+				"hint": "o p t i o n a l",
+				"textAlignment": "MIDCENTER",
+				"font": {
+					"family": "Nunito"
+				}
+			},
 			"className": ".textBox #pgBeforeGame-tbNicj",
 			"props": {
 				"name": "tbNick",
+				"hint": "o p t i o n a l",
 				"children": [],
 				"parent": "00c1-9d7c-cf6c-71e4"
 			}
@@ -156,10 +163,18 @@
 		{
 			"type": "Button",
 			"id": "78cc-6554-69ee-08d9",
-			"userProps": {},
-			"className": ".button #pgBeforeGame-btnGo",
+			"userProps": {
+				"text": "G O",
+				"usePageVariable": true,
+				"font": {
+					"family": "Nunito"
+				}
+			},
+			"className": ".button #pgBeforeGame-btnGo .pink-dark",
 			"props": {
 				"name": "btnGo",
+				"text": "G O",
+				"usePageVariable": true,
 				"children": [],
 				"parent": "00c1-9d7c-cf6c-71e4"
 			}

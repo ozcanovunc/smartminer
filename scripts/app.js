@@ -2,9 +2,6 @@
 require("i18n/i18n.js"); // Generates global lang object
 
 const Application = require("sf-core/application");
-
-// Set uncaught exception handler, all exceptions that are not caught will
-// trigger onUnhandledError callback.
 Application.onUnhandledError = function(e) {
     alert({
         title: lang.applicationError,
@@ -30,4 +27,5 @@ Application.theme = createThemeContextBound(themeSources);
 
 Router.add("pgLogin", require("./pages/pgLogin"));
 Router.add("pgBeforeGame", require("./pages/pgBeforeGame"));
+Router.add("pgWait", require("./pages/pgWait"));
 Router.go("pgLogin");
