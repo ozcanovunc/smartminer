@@ -15,6 +15,9 @@ const themeConfig = config.theme;
 const createThemeContextBound = require("@smartface/contx/lib/styling/ThemeContext").createThemeContextBound;
 const themeSources = [];
 
+const service = require("./service/index");
+service.init("wss://smartminer-server-ozcanovunc.c9users.io");
+
 themeConfig.themes.forEach(function(name) {
     themeSources.push({
         name: name,
@@ -28,4 +31,5 @@ Application.theme = createThemeContextBound(themeSources);
 Router.add("pgLogin", require("./pages/pgLogin"));
 Router.add("pgBeforeGame", require("./pages/pgBeforeGame"));
 Router.add("pgWait", require("./pages/pgWait"));
+Router.add("pgMainGame", require("./pages/pgMainGame"));
 Router.go("pgLogin");

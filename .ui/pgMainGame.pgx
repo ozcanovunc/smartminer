@@ -1,0 +1,48 @@
+{
+	"components": [
+		{
+			"type": "Page",
+			"id": "a82d-9063-57db-27e0",
+			"initialized": true,
+			"userProps": {},
+			"className": " .page",
+			"version": "6.5.3-rc.16",
+			"props": {
+				"name": "pgMainGame",
+				"children": [
+					"a909-45fd-2743-dace",
+					"8b96-c825-2b03-8286"
+				],
+				"parent": null,
+				"orientation": "PORTRAIT"
+			}
+		},
+		{
+			"type": "StatusBar",
+			"id": "a909-45fd-2743-dace",
+			"userProps": {},
+			"className": " .statusBar",
+			"props": {
+				"name": "statusBar",
+				"children": [],
+				"parent": "a82d-9063-57db-27e0",
+				"isRemovable": false
+			}
+		},
+		{
+			"type": "HeaderBar",
+			"id": "8b96-c825-2b03-8286",
+			"userProps": {
+				"title": "newPage001"
+			},
+			"className": " .headerBar",
+			"props": {
+				"name": "headerBar",
+				"title": "newPage001",
+				"children": [],
+				"parent": "a82d-9063-57db-27e0",
+				"isRemovable": false
+			}
+		}
+	]
+}
