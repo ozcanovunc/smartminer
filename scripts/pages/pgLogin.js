@@ -10,7 +10,12 @@ const PgLogin = extend(PgLoginDesign)(
         this.onShow = onShow.bind(this, this.onShow.bind(this));
         this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
         this.btnStart.onPress = () => {
-            fingerprint.loginWithFingerprint();
+            if (System.OS === "Android") {
+                return Router.go("pgBeforeGame");
+            }
+            else {
+                fingerprint.loginWithFingerprint();
+            }
         };
     });
 
@@ -26,8 +31,8 @@ function onShow(superOnShow) {
         callback: function(err, fingerprintResult) {
             if (!err) {
                 fingerprintResult && fingerprintResult.success();
+                Router.go("pgBeforeGame");
             }
-            Router.go("pgBeforeGame");
         }
     });
 }
