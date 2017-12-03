@@ -69,9 +69,9 @@
 			"type": "ImageView",
 			"id": "22ad-22bb-06da-8f99",
 			"userProps": {
-				"image": "diamod.png",
 				"imageFillType": "ASPECTFIT",
-				"width": null
+				"width": null,
+				"image": "diamond.png"
 			},
 			"className": ".imageView",
 			"props": {
