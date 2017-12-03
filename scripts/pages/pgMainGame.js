@@ -62,6 +62,7 @@ const PgMainGame = extend(PgMainGameDesign)(
 function onShow(superOnShow) {
     superOnShow();
     service.addMessageListener(onMessage);
+    service.send({ type: constants.COMMANDS.UPDATE_MINES, gameID: game.id });
 
     /********** ME **********/
     playerMe = new FlPlayer();
