@@ -14,7 +14,9 @@
 				"children": [
 					"0ed5-5f78-d155-c0aa",
 					"742b-33d4-cccb-940a",
-					"005e-cdba-ad19-2769"
+					"005e-cdba-ad19-2769",
+					"d3c5-fcf6-58ac-9f3e",
+					"499b-e9ef-de1b-7e20"
 				],
 				"parent": null,
 				"orientation": "PORTRAIT"
@@ -132,6 +134,50 @@
 				"usePageVariable": true,
 				"children": [],
 				"parent": "32a9-3d1a-7d16-f89f"
+			}
+		},
+		{
+			"type": "TextArea",
+			"id": "d3c5-fcf6-58ac-9f3e",
+			"userProps": {
+				"usePageVariable": true,
+				"text": "dummy",
+				"width": null,
+				"height": null,
+				"visible": false,
+				"font": {
+					"size": 0
+				}
+			},
+			"className": ".textArea",
+			"props": {
+				"name": "taUsername",
+				"text": "dummy",
+				"usePageVariable": true,
+				"children": [],
+				"parent": "80eb-e142-756a-8676"
+			}
+		},
+		{
+			"type": "TextArea",
+			"id": "499b-e9ef-de1b-7e20",
+			"userProps": {
+				"visible": false,
+				"usePageVariable": true,
+				"text": "dummy",
+				"width": null,
+				"height": null,
+				"font": {
+					"size": 0
+				}
+			},
+			"className": ".textArea",
+			"props": {
+				"name": "taPassword",
+				"text": "dummy",
+				"usePageVariable": true,
+				"children": [],
+				"parent": "80eb-e142-756a-8676"
 			}
 		}
 	]

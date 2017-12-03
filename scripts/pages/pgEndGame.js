@@ -3,6 +3,7 @@ const extend = require('js-base/core/extend');
 const PgEndGameDesign = require('ui/ui_pgEndGame');
 const Router = require("sf-core/ui/router");
 const service = require("../service/index");
+const constants = require("../constants");
 
 const PgEndGame = extend(PgEndGameDesign)(
     function(_super) {
@@ -21,6 +22,12 @@ function onShow(superOnShow) {
     var resultText = myScore > opponentScore ? "Y O U  W I N" : "Y O U  L O S E";
     resultText = myScore === opponentScore ? "T I E" : resultText;
     this.lblMain.text = resultText;
+
+    // Deregister user & current game from server
+    service.send({
+        type: constants.COMMANDS.DEREGISTER_USER,
+        userID: game.me.id
+    });
 }
 
 function onLoad(superOnLoad) {
