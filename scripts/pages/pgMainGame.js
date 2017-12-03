@@ -6,6 +6,9 @@ const FlMine = require("../components/FlMine");
 const convertPercentToPixels = require("../util/convertPercentToPixels");
 const service = require("../service/index");
 const constants = require("../constants");
+const Timer = require("sf-core/timer");
+const Router = require("sf-core/ui/router");
+const SECOND_IN_MS = 1000;
 var width = 100;
 var height = 50;
 var mineWidth = 30;
@@ -13,7 +16,7 @@ var mineHeight = 30;
 var page;
 var playerMe;
 var playerOpponent;
-var minesOnScreen = {};
+var minesOnScreen;
 
 const PgMainGame = extend(PgMainGameDesign)(
     function(_super) {
@@ -61,8 +64,22 @@ const PgMainGame = extend(PgMainGameDesign)(
 
 function onShow(superOnShow) {
     superOnShow();
+    minesOnScreen = {};
     service.addMessageListener(onMessage);
     service.send({ type: constants.COMMANDS.UPDATE_MINES, gameID: game.id });
+
+    var timeLeft = 30;
+    var timer = Timer.setInterval({
+        task: () => {
+            page.lblSecond.text = --timeLeft;
+            if (timeLeft === 0) {
+                Timer.clearTimer(timer);
+                service.removeMessageListener(onMessage);
+                Router.go("pgEndGame");
+            }
+        },
+        delay: SECOND_IN_MS
+    });
 
     /********** ME **********/
     playerMe = new FlPlayer();
@@ -130,10 +147,10 @@ function onMessage(message) {
             var userID = message.userID;
             var score = message.score;
             if (userID === game.me.id) {
-                page.lblMyScore.text = score;
+                page.lblMyScore.text = game.me.score = score;
             }
             else {
-                page.lblOpponentScore.text = score;
+                page.lblOpponentScore.text = game.opponent.score = score;
             }
             break;
         case constants.COMMANDS.UPDATE_MINES:

@@ -1,4 +1,5 @@
 module.exports = {
+    URL: "wss://smartminer-server-ozcanovunc.c9users.io",
     SERVICE: {
         "USER": "USER",
         "MESSAGE": "MESSAGE",

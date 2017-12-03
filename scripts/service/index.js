@@ -1,11 +1,11 @@
 const constants = require("../constants");
 const WebSocket = require("sf-core/net/websocket");
-var ws;
+var ws = null;
 var listeners = [];
 
 module.exports = {
-    init: function init(url) {
-        ws = new WebSocket({ url: url });
+    init: function init() {
+        ws = new WebSocket({ url: constants.URL });
     },
     connect: function connect() {
         this.send({ type: constants.COMMANDS.REGISTER_USER });
