@@ -2,14 +2,18 @@
 const extend = require('js-base/core/extend');
 const PgMainGameDesign = require('ui/ui_pgMainGame');
 const FlPlayer = require("../components/FlPlayer");
+const FlMine = require("../components/FlMine");
 const convertPercentToPixels = require("../util/convertPercentToPixels");
 const service = require("../service/index");
 const constants = require("../constants");
 var width = 100;
 var height = 50;
+var mineWidth = 30;
+var mineHeight = 30;
 var page;
 var playerMe;
 var playerOpponent;
+var minesOnScreen = {};
 
 const PgMainGame = extend(PgMainGameDesign)(
     function(_super) {
@@ -18,7 +22,6 @@ const PgMainGame = extend(PgMainGameDesign)(
         this.onShow = onShow.bind(this, this.onShow.bind(this));
         this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
         this.btnUp.onPress = () => {
-            console.log("btnUp");
             service.send({
                 type: constants.COMMANDS.UPDATE_USER_POSITION,
                 userID: game.me.id,
@@ -28,7 +31,6 @@ const PgMainGame = extend(PgMainGameDesign)(
             });
         };
         this.btnDown.onPress = () => {
-            console.log("btnDown");
             service.send({
                 type: constants.COMMANDS.UPDATE_USER_POSITION,
                 userID: game.me.id,
@@ -38,7 +40,6 @@ const PgMainGame = extend(PgMainGameDesign)(
             });
         };
         this.btnRight.onPress = () => {
-            console.log("btnRight");
             service.send({
                 type: constants.COMMANDS.UPDATE_USER_POSITION,
                 userID: game.me.id,
@@ -48,7 +49,6 @@ const PgMainGame = extend(PgMainGameDesign)(
             });
         };
         this.btnLeft.onPress = () => {
-            console.log("btnLeft");
             service.send({
                 type: constants.COMMANDS.UPDATE_USER_POSITION,
                 userID: game.me.id,
@@ -67,29 +67,31 @@ function onShow(superOnShow) {
     playerMe = new FlPlayer();
     playerMe.lblName.text = "You";
     playerMe.lblIcon.text = "👷️";
-    this.flRoot.addChild(playerMe, game.me.id, ".flexLayout .flAbsolute", function(style) {
-        style.width = 100;
+    page.flRoot.addChild(playerMe, game.me.id, ".flexLayout .flAbsolute", function(style) {
         style.width = width;
         style.height = height;
         style.backgroundColor = "rgba(0,0,0,0)";
-        style.top = convertPercentToPixels(page.flRoot.height, game.me.position.top) - height / 2;
-        style.left = convertPercentToPixels(page.flRoot.width, game.me.position.left) - width / 2;
+        style.top = convertPercentToPixels(page.flRoot.height, game.me.position.top);
+        style.left = convertPercentToPixels(page.flRoot.width, game.me.position.left);
         return style;
     });
+    page.lblMyScore.text = 0;
+    page.lblMyName.text = "You";
 
     /********** OPPONENT **********/
     playerOpponent = new FlPlayer();
     playerOpponent.lblName.text = game.opponent.name;
     playerOpponent.lblIcon.text = "👷️";
-    this.flRoot.addChild(playerOpponent, game.opponent.id, ".flexLayout .flAbsolute", function(style) {
-        style.width = 100;
+    page.flRoot.addChild(playerOpponent, game.opponent.id, ".flexLayout .flAbsolute", function(style) {
         style.width = width;
         style.height = height;
         style.backgroundColor = "rgba(0,0,0,0)";
-        style.top = convertPercentToPixels(page.flRoot.height, game.opponent.position.top) - height / 2;
-        style.left = convertPercentToPixels(page.flRoot.width, game.opponent.position.left) - width / 2;
+        style.top = convertPercentToPixels(page.flRoot.height, game.opponent.position.top);
+        style.left = convertPercentToPixels(page.flRoot.width, game.opponent.position.left);
         return style;
     });
+    page.lblOpponentScore.text = 0;
+    page.lblOpponentName.text = game.opponent.name;
 }
 
 function onLoad(superOnLoad) {
@@ -101,8 +103,8 @@ function onMessage(message) {
         case constants.COMMANDS.UPDATE_USER_POSITION:
             var userID = message.userID;
             var position = message.position;
-            var top = convertPercentToPixels(page.flRoot.height, position.top) - height / 2;
-            var left = convertPercentToPixels(page.flRoot.width, position.left) - width / 2;
+            var top = convertPercentToPixels(page.flRoot.height, position.top);
+            var left = convertPercentToPixels(page.flRoot.width, position.left);
             var component;
 
             if (userID === game.me.id) {
@@ -114,9 +116,6 @@ function onMessage(message) {
                 game.opponent.position = position;
             }
 
-            console.log(userID === game.me.id ? "me" : "bok");
-            console.log("position " + top + " " + left);
-
             component.dispatch({
                 type: "updateUserStyle",
                 userStyle: {
@@ -126,6 +125,46 @@ function onMessage(message) {
             });
             component.applyLayout();
             break;
+        case constants.COMMANDS.UPDATE_USER_SCORE:
+            var userID = message.userID;
+            var score = message.score;
+            if (userID === game.me.id) {
+                page.lblMyScore.text = score;
+            }
+            else {
+                page.lblOpponentScore.text = score;
+            }
+            break;
+        case constants.COMMANDS.UPDATE_MINES:
+            var mines = message.mines;
+            drawMines(mines);
+            break;
+    }
+}
+
+function drawMines(mines) {
+    for (var mineID in minesOnScreen) {
+        // Mine on screen should be removed
+        if (!mines[mineID]) {
+            page.flRoot.removeChild(minesOnScreen[mineID]);
+            page.layout.applyLayout();
+            delete minesOnScreen[mineID];
+        }
+    }
+    for (var mineID in mines) {
+        if (!minesOnScreen[mineID]) {
+            var mine = new FlMine();
+            var minePosition = mines[mineID].position;
+            page.flRoot.addChild(mine, mineID, ".flexLayout .flAbsolute", function(style) {
+                style.width = mineWidth;
+                style.height = mineHeight;
+                style.backgroundColor = "rgba(0,0,0,0)";
+                style.top = convertPercentToPixels(page.flRoot.height, minePosition.top);
+                style.left = convertPercentToPixels(page.flRoot.width, minePosition.left);
+                return style;
+            });
+            minesOnScreen[mineID] = mine;
+        }
     }
 }
 

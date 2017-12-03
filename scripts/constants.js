@@ -11,7 +11,9 @@ module.exports = {
         REGISTER_USER: "registerUser",
         UPDATE_USER_POSITION: "updateUserPosition",
         UPDATE_USER_STATE: "updateUserState",
-        START_GAME: "startGame"
+        UPDATE_USER_SCORE: "updateUserScore",
+        START_GAME: "startGame",
+        UPDATE_MINES: "updateMines"
     },
     USER: {
         STATE: {

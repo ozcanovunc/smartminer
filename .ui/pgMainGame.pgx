@@ -12,6 +12,7 @@
 				"children": [
 					"a909-45fd-2743-dace",
 					"8b96-c825-2b03-8286",
+					"4a80-e342-8729-0644",
 					"4662-383f-521b-f75b",
 					"4b95-6cb9-90ad-ff73"
 				],
@@ -50,7 +51,11 @@
 			"type": "FlexLayout",
 			"id": "4662-383f-521b-f75b",
 			"userProps": {
-				"usePageVariable": true
+				"usePageVariable": true,
+				"height": null,
+				"flexProps": {
+					"flexGrow": 1
+				}
 			},
 			"className": ".flexLayout .flRoot",
 			"props": {
@@ -66,7 +71,7 @@
 			"userProps": {
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"width": null,
-				"height": 100,
+				"height": 90,
 				"paddingTop": 5,
 				"paddingBottom": 5,
 				"flexProps": {
@@ -232,6 +237,237 @@
 				"usePageVariable": true,
 				"children": [],
 				"parent": "66a4-d1a7-7631-7175"
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "4a80-e342-8729-0644",
+			"userProps": {
+				"width": null,
+				"height": 90,
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"paddingTop": 5,
+				"paddingBottom": 5,
+				"flexProps": {
+					"flexDirection": "ROW",
+					"justifyContent": "CENTER"
+				}
+			},
+			"className": ".flexLayout",
+			"props": {
+				"name": "flScore",
+				"children": [
+					"d326-f926-be40-d042"
+				],
+				"parent": "a82d-9063-57db-27e0"
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "d326-f926-be40-d042",
+			"userProps": {
+				"width": 300,
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"height": 80,
+				"flexProps": {
+					"flexDirection": "ROW"
+				}
+			},
+			"className": ".flexLayout",
+			"props": {
+				"name": "flScoreWrapper",
+				"children": [
+					"e892-7399-220b-ed58",
+					"e973-8d1d-9dd3-4aa1",
+					"8741-3ea3-1641-da76"
+				],
+				"parent": "4a80-e342-8729-0644"
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "8741-3ea3-1641-da76",
+			"userProps": {
+				"width": null,
+				"height": null,
+				"backgroundColor": "rgba( 140, 0, 50, 1 )",
+				"marginLeft": 2.5,
+				"marginRight": 2.5,
+				"marginTop": 2.5,
+				"marginBottom": 2.5,
+				"borderRadius": 10,
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"left": 0,
+				"top": 0
+			},
+			"className": ".flexLayout",
+			"props": {
+				"name": "flOpponentPart",
+				"children": [
+					"5775-139d-ec9e-f9c9",
+					"3f14-3241-b472-2cfd"
+				],
+				"parent": "d326-f926-be40-d042"
+			}
+		},
+		{
+			"type": "Label",
+			"id": "5775-139d-ec9e-f9c9",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"text": "OPPONENT",
+				"textColor": "rgba( 255, 255, 255, 1 )",
+				"textAlignment": "MIDCENTER",
+				"width": null,
+				"height": null,
+				"left": 0,
+				"top": 0,
+				"usePageVariable": true,
+				"font": {
+					"family": "Nunito",
+					"size": 16
+				},
+				"flexProps": {
+					"flexGrow": 2
+				}
+			},
+			"className": ".label",
+			"props": {
+				"name": "lblOpponentName",
+				"text": "OPPONENT",
+				"usePageVariable": true,
+				"children": [],
+				"parent": "8741-3ea3-1641-da76"
+			}
+		},
+		{
+			"type": "Label",
+			"id": "3f14-3241-b472-2cfd",
+			"userProps": {},
+			"className": ".label #pgMainGame.score",
+			"props": {
+				"name": "lblOpponentScore",
+				"text": "10",
+				"usePageVariable": true,
+				"children": [],
+				"parent": "8741-3ea3-1641-da76"
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "e892-7399-220b-ed58",
+			"userProps": {
+				"width": null,
+				"height": null,
+				"backgroundColor": "rgba( 140, 0, 50, 1 )",
+				"marginLeft": 2.5,
+				"marginRight": 2.5,
+				"marginTop": 2.5,
+				"marginBottom": 2.5,
+				"borderRadius": 10,
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"left": 0,
+				"top": 0
+			},
+			"className": ".flexLayout",
+			"props": {
+				"name": "flMyPart",
+				"children": [
+					"4e8e-668a-4373-b9f9",
+					"633f-2ae2-50f4-4c65"
+				],
+				"parent": "d326-f926-be40-d042"
+			}
+		},
+		{
+			"type": "Label",
+			"id": "4e8e-668a-4373-b9f9",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"text": "YOU",
+				"textColor": "rgba( 255, 255, 255, 1 )",
+				"textAlignment": "MIDCENTER",
+				"width": null,
+				"height": null,
+				"usePageVariable": true,
+				"font": {
+					"family": "Nunito",
+					"size": 16
+				},
+				"flexProps": {
+					"flexGrow": 2
+				}
+			},
+			"className": ".label",
+			"props": {
+				"name": "lblMyName",
+				"text": "YOU",
+				"usePageVariable": true,
+				"children": [],
+				"parent": "e892-7399-220b-ed58"
+			}
+		},
+		{
+			"type": "Label",
+			"id": "633f-2ae2-50f4-4c65",
+			"userProps": {},
+			"className": ".label #pgMainGame.score",
+			"props": {
+				"name": "lblMyScore",
+				"text": "20",
+				"usePageVariable": true,
+				"children": [],
+				"parent": "e892-7399-220b-ed58"
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "e973-8d1d-9dd3-4aa1",
+			"userProps": {
+				"width": null,
+				"height": null,
+				"backgroundColor": "rgba( 140, 0, 50, 1 )",
+				"marginLeft": 2.5,
+				"marginRight": 2.5,
+				"marginTop": 2.5,
+				"marginBottom": 2.5,
+				"borderRadius": 10,
+				"left": 0,
+				"top": 0,
+				"flexProps": {
+					"flexGrow": 0.5
+				}
+			},
+			"className": ".flexLayout",
+			"props": {
+				"name": "flSecondPart",
+				"children": [
+					"2732-c2c5-08e4-e2e1"
+				],
+				"parent": "d326-f926-be40-d042"
+			}
+		},
+		{
+			"type": "Label",
+			"id": "2732-c2c5-08e4-e2e1",
+			"userProps": {
+				"textAlignment": "MIDCENTER",
+				"usePageVariable": true,
+				"font": {
+					"size": 30
+				}
+			},
+			"className": ".label #pgMainGame.score",
+			"props": {
+				"name": "lblSecond",
+				"text": "10",
+				"usePageVariable": true,
+				"children": [],
+				"parent": "e973-8d1d-9dd3-4aa1"
 			}
 		}
 	]

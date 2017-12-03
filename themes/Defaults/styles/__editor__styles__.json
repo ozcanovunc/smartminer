@@ -161,5 +161,23 @@
 		"flexProps": {
 			"positionType": "ABSOLUTE"
 		}
+	},
+	"#pgMainGame.score": {
+		"width": null,
+		"height": null,
+		"backgroundColor": "rgba( 255, 255, 255, 0 )",
+		"textColor": "rgba( 255, 255, 255, 1 )",
+		"text": "10",
+		"textAlignment": "TOPCENTER",
+		"left": 0,
+		"top": 0,
+		"usePageVariable": true,
+		"flexProps": {
+			"flexGrow": 2
+		},
+		"font": {
+			"family": "Nunito",
+			"size": 26
+		}
 	}
 }
