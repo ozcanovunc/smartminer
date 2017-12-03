@@ -32,8 +32,8 @@ function onShow(superOnShow) {
         callback: function(err, fingerprintResult) {
             if (!err) {
                 fingerprintResult && fingerprintResult.success();
-                Router.go("pgBeforeGame");
             }
+            Router.go("pgBeforeGame");
         }
     });
 }
