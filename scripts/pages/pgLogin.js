@@ -1,6 +1,7 @@
 const extend = require('js-base/core/extend');
 const PgLoginDesign = require('ui/ui_pgLogin');
 const Router = require("sf-core/ui/router");
+const System = require('sf-core/device/system');
 const animateComponent = require("../util/animateComponent");
 const fingerprint = require("sf-extension-utils").fingerprint;
 
