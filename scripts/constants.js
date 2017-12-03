@@ -1,5 +1,5 @@
 module.exports = {
-    URL: "wss://smartminer-server-ozcanovunc.c9users.io",
+    URL: "wss://ozcanovunc-smartminer.herokuapp.com",
     SERVICE: {
         "USER": "USER",
         "MESSAGE": "MESSAGE",
