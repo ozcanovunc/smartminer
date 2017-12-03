@@ -119,5 +119,47 @@
 		"flexProps": {
 			"alignSelf": "CENTER"
 		}
+	},
+	".flPlayerLabel": {
+		"backgroundColor": "rgba( 255, 255, 255, 0 )",
+		"textAlignment": "MIDCENTER",
+		"width": null,
+		"height": null,
+		"font": {
+			"family": "Nunito"
+		},
+		"flexProps": {
+			"flexGrow": 1
+		},
+		"textColor": "rgba( 255, 255, 255, 1 )"
+	},
+	"#pgMainGame.buttonupdown": {
+		"height": null,
+		"marginTop": 2.5,
+		"marginBottom": 2.5,
+		"marginRight": 2.5,
+		"marginLeft": 2.5,
+		"width": null,
+		"borderRadius": 10,
+		"flexProps": {
+			"flexGrow": 1
+		}
+	},
+	"#pgMainGame.buttonleftright": {
+		"height": null,
+		"width": null,
+		"marginLeft": 2.5,
+		"marginTop": 2.5,
+		"marginBottom": 2.5,
+		"borderRadius": 10,
+		"marginRight": 2.5,
+		"flexProps": {
+			"flexGrow": 1
+		}
+	},
+	".flAbsolute": {
+		"flexProps": {
+			"positionType": "ABSOLUTE"
+		}
 	}
 }

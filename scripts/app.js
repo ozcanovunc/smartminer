@@ -33,3 +33,7 @@ Router.add("pgBeforeGame", require("./pages/pgBeforeGame"));
 Router.add("pgWait", require("./pages/pgWait"));
 Router.add("pgMainGame", require("./pages/pgMainGame"));
 Router.go("pgLogin");
+
+
+
+//Router.go("pgMainGame");

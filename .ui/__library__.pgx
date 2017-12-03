@@ -3,18 +3,20 @@
 		{
 			"type": "Page",
 			"id": "57f4-201f-4bfc-5fc6",
+			"initialized": true,
 			"userProps": {},
+			"className": " .page",
+			"version": "6.5.3",
 			"props": {
 				"name": "__library__",
-				"parent": null,
 				"children": [
 					"23c1-aa21-38ff-148e",
-					"76f4-a7ec-36e9-a444"
+					"76f4-a7ec-36e9-a444",
+					"c1aa-2617-0f0b-5863"
 				],
+				"parent": null,
 				"orientation": "PORTRAIT"
-			},
-			"version": "6.5.3",
-			"initialized": false
+			}
 		},
 		{
 			"type": "StatusBar",
@@ -22,9 +24,8 @@
 			"userProps": {},
 			"props": {
 				"name": "statusBar",
-				"parent": "57f4-201f-4bfc-5fc6",
 				"children": [],
-				"visible": true,
+				"parent": "57f4-201f-4bfc-5fc6",
 				"isRemovable": false
 			}
 		},
@@ -36,11 +37,66 @@
 			},
 			"props": {
 				"name": "headerBar",
-				"parent": "57f4-201f-4bfc-5fc6",
-				"children": [],
 				"title": "__library__",
-				"visible": true,
+				"children": [],
+				"parent": "57f4-201f-4bfc-5fc6",
 				"isRemovable": false
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "c1aa-2617-0f0b-5863",
+			"source": {
+				"page": "__library__"
+			},
+			"userProps": {
+				"flexProps": {},
+				"left": 35.50724453396268,
+				"top": 21.08968628777398,
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"width": 270.53140004475915,
+				"height": 118.49193572998047
+			},
+			"className": ".flexLayout",
+			"props": {
+				"name": "flPlayer",
+				"children": [
+					"8c56-a5dc-b700-d018",
+					"fc97-802a-2579-4024"
+				],
+				"parent": "57f4-201f-4bfc-5fc6"
+			}
+		},
+		{
+			"type": "Label",
+			"id": "8c56-a5dc-b700-d018",
+			"source": {
+				"page": "__library__"
+			},
+			"userProps": {},
+			"className": ".label .flPlayerLabel",
+			"props": {
+				"name": "lblName",
+				"text": "USERNAME",
+				"usePageVariable": true,
+				"children": [],
+				"parent": "c1aa-2617-0f0b-5863"
+			}
+		},
+		{
+			"type": "Label",
+			"id": "fc97-802a-2579-4024",
+			"source": {
+				"page": "__library__"
+			},
+			"userProps": {},
+			"className": ".label .flPlayerLabel",
+			"props": {
+				"name": "lblIcon",
+				"text": "👷‍♂️",
+				"usePageVariable": true,
+				"children": [],
+				"parent": "c1aa-2617-0f0b-5863"
 			}
 		}
 	]

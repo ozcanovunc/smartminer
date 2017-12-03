@@ -11,7 +11,9 @@
 				"name": "pgMainGame",
 				"children": [
 					"a909-45fd-2743-dace",
-					"8b96-c825-2b03-8286"
+					"8b96-c825-2b03-8286",
+					"4662-383f-521b-f75b",
+					"4b95-6cb9-90ad-ff73"
 				],
 				"parent": null,
 				"orientation": "PORTRAIT"
@@ -42,6 +44,194 @@
 				"children": [],
 				"parent": "a82d-9063-57db-27e0",
 				"isRemovable": false
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "4662-383f-521b-f75b",
+			"userProps": {
+				"usePageVariable": true
+			},
+			"className": ".flexLayout .flRoot",
+			"props": {
+				"name": "flRoot",
+				"usePageVariable": true,
+				"children": [],
+				"parent": "a82d-9063-57db-27e0"
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "4b95-6cb9-90ad-ff73",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"width": null,
+				"height": 100,
+				"paddingTop": 5,
+				"paddingBottom": 5,
+				"flexProps": {
+					"flexDirection": "ROW",
+					"justifyContent": "CENTER"
+				}
+			},
+			"className": ".flexLayout",
+			"props": {
+				"name": "flButtons",
+				"children": [
+					"a8c2-0d00-c6ef-d2cf"
+				],
+				"parent": "a82d-9063-57db-27e0"
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "a8c2-0d00-c6ef-d2cf",
+			"userProps": {
+				"height": 80,
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"width": 300,
+				"flexProps": {
+					"flexDirection": "ROW"
+				}
+			},
+			"className": ".flexLayout",
+			"props": {
+				"name": "flButtonsWrapper",
+				"children": [
+					"c1f2-7368-a5e3-1c2a",
+					"0ae0-0cbd-e475-c0e6",
+					"66a4-d1a7-7631-7175"
+				],
+				"parent": "4b95-6cb9-90ad-ff73"
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "c1f2-7368-a5e3-1c2a",
+			"userProps": {
+				"left": 0,
+				"top": 0,
+				"width": 100,
+				"height": null
+			},
+			"className": ".flexLayout .flRoot",
+			"props": {
+				"name": "flButtonsLeft",
+				"children": [
+					"7f0b-c284-4112-7236"
+				],
+				"parent": "a8c2-0d00-c6ef-d2cf"
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "0ae0-0cbd-e475-c0e6",
+			"userProps": {
+				"left": 0,
+				"top": 0,
+				"width": 100,
+				"flexProps": {
+					"flexGrow": 1,
+					"flexDirection": "COLUMN"
+				}
+			},
+			"className": ".flexLayout .flRoot",
+			"props": {
+				"name": "flButtonsMiddle",
+				"children": [
+					"66eb-022d-d9b3-d072",
+					"9b5a-df95-e896-40fc"
+				],
+				"parent": "a8c2-0d00-c6ef-d2cf"
+			}
+		},
+		{
+			"type": "FlexLayout",
+			"id": "66a4-d1a7-7631-7175",
+			"userProps": {
+				"left": 0,
+				"top": 0,
+				"width": 100
+			},
+			"className": ".flexLayout .flRoot",
+			"props": {
+				"name": "flButtonsRight",
+				"children": [
+					"e5b5-81cb-8d65-e4e8"
+				],
+				"parent": "a8c2-0d00-c6ef-d2cf"
+			}
+		},
+		{
+			"type": "Button",
+			"id": "7f0b-c284-4112-7236",
+			"userProps": {
+				"text": "←",
+				"usePageVariable": true,
+				"font": {
+					"family": "Nunito",
+					"size": 20
+				}
+			},
+			"className": ".button #pgMainGame.buttonleftright .pink-dark",
+			"props": {
+				"name": "btnLeft",
+				"text": "←",
+				"usePageVariable": true,
+				"children": [],
+				"parent": "c1f2-7368-a5e3-1c2a"
+			}
+		},
+		{
+			"type": "Button",
+			"id": "66eb-022d-d9b3-d072",
+			"userProps": {
+				"text": "↑",
+				"usePageVariable": true
+			},
+			"className": ".button #pgMainGame.buttonupdown .pink-dark",
+			"props": {
+				"name": "btnUp",
+				"text": "↑",
+				"usePageVariable": true,
+				"children": [],
+				"parent": "0ae0-0cbd-e475-c0e6"
+			}
+		},
+		{
+			"type": "Button",
+			"id": "9b5a-df95-e896-40fc",
+			"userProps": {
+				"text": "↓",
+				"usePageVariable": true
+			},
+			"className": ".button #pgMainGame.buttonupdown .pink-dark",
+			"props": {
+				"name": "btnDown",
+				"text": "↓",
+				"usePageVariable": true,
+				"children": [],
+				"parent": "0ae0-0cbd-e475-c0e6"
+			}
+		},
+		{
+			"type": "Button",
+			"id": "e5b5-81cb-8d65-e4e8",
+			"userProps": {
+				"text": "→",
+				"usePageVariable": true,
+				"font": {
+					"size": 20,
+					"family": "Nunito"
+				}
+			},
+			"className": ".button #pgMainGame.buttonleftright .pink-dark",
+			"props": {
+				"name": "btnRight",
+				"text": "→",
+				"usePageVariable": true,
+				"children": [],
+				"parent": "66a4-d1a7-7631-7175"
 			}
 		}
 	]

@@ -1,4 +1,4 @@
-/* globals myID, myName, gameID */
+/* globals game */
 const extend = require('js-base/core/extend');
 const PgWaitDesign = require('ui/ui_pgWait');
 const Router = require("sf-core/ui/router");
@@ -22,16 +22,17 @@ function onShow(superOnShow) {
 function onMessage(message) {
     switch (message.type) {
         case constants.COMMANDS.REGISTER_USER:
-            myID = message.user.id;
-            myName = message.user.name;
+            game = {};
+            game.me = message.user;
             service.send({
                 type: constants.COMMANDS.UPDATE_USER_STATE,
-                userID: myID,
+                userID: game.me.id,
                 state: constants.USER.STATE.SEARCHING_FOR_OPPONENT
             });
             break;
         case constants.COMMANDS.START_GAME:
-            gameID = message.gameID;
+            game.id = message.gameID;
+            game.opponent = findOpponent(message.users);
             Router.go("pgMainGame");
             service.removeMessageListener(onMessage);
             break;
@@ -40,6 +41,15 @@ function onMessage(message) {
 
 function onLoad(superOnLoad) {
     superOnLoad();
+}
+
+function findOpponent(users) {
+    if (users[0].id === game.me.id) {
+        return users[1];
+    }
+    else {
+        return users[0];
+    }
 }
 
 module && (module.exports = PgWait);
