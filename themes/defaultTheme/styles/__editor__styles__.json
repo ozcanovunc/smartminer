@@ -1,0 +1,183 @@
+{
+	".flRoot": {
+		"backgroundColor": "rgba( 255, 255, 255, 0 )",
+		"flexProps": {
+			"flexGrow": 1,
+			"justifyContent": "SPACE_AROUND"
+		},
+		"width": null,
+		"height": null
+	},
+	"#pgLogin-lblMain": {
+		"backgroundColor": "rgba( 255, 255, 255, 0 )",
+		"textColor": "rgba( 255, 255, 255, 1 )",
+		"textAlignment": "MIDCENTER",
+		"width": null,
+		"font": {},
+		"alpha": 0
+	},
+	"#pgLogin-btnStart": {
+		"borderRadius": 10,
+		"backgroundColor": "rgba( 87, 87, 87, 1 )",
+		"width": null,
+		"height": 50,
+		"marginLeft": 50,
+		"marginRight": 50,
+		"flexProps": {},
+		"alpha": 0
+	},
+	"#pgLogin-flButton": {
+		"backgroundColor": "rgba( 255, 255, 255, 0 )",
+		"width": null,
+		"flexProps": {
+			"justifyContent": "CENTER"
+		}
+	},
+	".headerBar": {
+		"visible": false
+	},
+	".statusBar": {
+		"visible": false
+	},
+	".page": {
+		"backgroundColor": "rgba( 0, 0, 0, 1 )"
+	},
+	"#pgBeforeGame-flWrapper": {
+		"width": null,
+		"height": null,
+		"flexProps": {
+			"flexGrow": 1
+		},
+		"backgroundColor": "rgba( 255, 255, 255, 0 )"
+	},
+	"#pgBeforeGame-flWrapper-main": {
+		"width": null,
+		"height": null,
+		"flexProps": {
+			"flexGrow": 1
+		},
+		"backgroundColor": "rgba( 255, 255, 255, 0 )"
+	},
+	"#pgBeforeGame-flText": {
+		"width": null,
+		"height": null,
+		"flexProps": {
+			"flexGrow": 1
+		},
+		"backgroundColor": "rgba( 255, 255, 255, 0 )"
+	},
+	"#pgBeforeGame-flInfo": {
+		"width": null,
+		"height": null,
+		"flexProps": {
+			"flexGrow": 2,
+			"justifyContent": "SPACE_AROUND"
+		},
+		"backgroundColor": "rgba( 255, 255, 255, 0 )"
+	},
+	"#pgBeforeGame-lblText": {
+		"flexProps": {
+			"flexGrow": 1
+		},
+		"textAlignment": "MIDCENTER",
+		"width": null,
+		"height": null,
+		"backgroundColor": "rgba( 255, 255, 255, 0 )",
+		"textColor": "rgba( 255, 255, 255, 1 )"
+	},
+	"#pgBeforeGame-tbNicj": {
+		"width": null,
+		"marginLeft": 50,
+		"marginRight": 50,
+		"borderRadius": 10,
+		"height": 50
+	},
+	"#pgBeforeGame-btnGo": {
+		"marginLeft": 50,
+		"marginRight": 50,
+		"width": null,
+		"borderRadius": 10,
+		"height": 50
+	},
+	".pink-dark": {
+		"backgroundColor": "rgba( 140, 0, 50, 1 )"
+	},
+	".pink": {
+		"backgroundColor": "rgba( 194, 24, 91, 1 )"
+	},
+	"#pgWait.flRoot": {
+		"flexProps": {
+			"justifyContent": "CENTER",
+			"flexGrow": 1
+		},
+		"width": null,
+		"height": null,
+		"backgroundColor": "rgba( 255, 255, 255, 0 )"
+	},
+	"#pgWait.activity": {
+		"backgroundColor": "rgba( 255, 255, 255, 0 )",
+		"flexProps": {
+			"alignSelf": "CENTER"
+		}
+	},
+	".flPlayerLabel": {
+		"backgroundColor": "rgba( 255, 255, 255, 0 )",
+		"textAlignment": "MIDCENTER",
+		"width": null,
+		"height": null,
+		"font": {
+			"family": "Nunito"
+		},
+		"flexProps": {
+			"flexGrow": 1
+		},
+		"textColor": "rgba( 255, 255, 255, 1 )"
+	},
+	"#pgMainGame.buttonupdown": {
+		"height": null,
+		"marginTop": 2.5,
+		"marginBottom": 2.5,
+		"marginRight": 2.5,
+		"marginLeft": 2.5,
+		"width": null,
+		"borderRadius": 10,
+		"flexProps": {
+			"flexGrow": 1
+		}
+	},
+	"#pgMainGame.buttonleftright": {
+		"height": null,
+		"width": null,
+		"marginLeft": 2.5,
+		"marginTop": 2.5,
+		"marginBottom": 2.5,
+		"borderRadius": 10,
+		"marginRight": 2.5,
+		"flexProps": {
+			"flexGrow": 1
+		}
+	},
+	".flAbsolute": {
+		"flexProps": {
+			"positionType": "ABSOLUTE"
+		}
+	},
+	"#pgMainGame.score": {
+		"width": null,
+		"height": null,
+		"backgroundColor": "rgba( 255, 255, 255, 0 )",
+		"textColor": "rgba( 255, 255, 255, 1 )",
+		"text": "10",
+		"textAlignment": "TOPCENTER",
+		"left": 0,
+		"top": 0,
+		"usePageVariable": true,
+		"flexProps": {
+			"flexGrow": 2
+		},
+		"font": {
+			"family": "Nunito",
+			"size": 26
+		}
+	}
+}

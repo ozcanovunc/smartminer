@@ -1,0 +1,51 @@
+{
+	"components": [
+		{
+			"className": ".flexLayout",
+			"id": "e373-a575-8b35-d0c4",
+			"props": {
+				"children": [
+					"c0f7-300e-bf7a-3ff5"
+				],
+				"name": "flMine",
+				"parent": "57f4-201f-4bfc-5fc6"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {},
+				"height": 35.08771929824562,
+				"left": 14.285714285714286,
+				"top": 204.76190476190476,
+				"width": 35.08771929824562
+			}
+		},
+		{
+			"className": ".label",
+			"id": "c0f7-300e-bf7a-3ff5",
+			"props": {
+				"children": [],
+				"name": "lblIcon",
+				"parent": "e373-a575-8b35-d0c4",
+				"text": "💎"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "TextView",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"height": null,
+				"text": "💎",
+				"textAlignment": "MIDCENTER",
+				"width": null
+			}
+		}
+	]
+}

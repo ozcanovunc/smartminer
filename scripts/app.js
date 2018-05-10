@@ -1,3 +1,5 @@
+require("./theme");
+
 /* globals lang */
 require("i18n/i18n.js"); // Generates global lang object
 
@@ -31,6 +33,6 @@ Application.theme = createThemeContextBound(themeSources);
 Router.add("pgLogin", require("./pages/pgLogin"));
 Router.add("pgBeforeGame", require("./pages/pgBeforeGame"));
 Router.add("pgWait", require("./pages/pgWait"));
-Router.add("pgMainGame", require("./pages/pgMainGame"));
+//Router.add("pgMainGame", require("./pages/pgMainGame"));
 Router.add("pgEndGame", require("./pages/pgEndGame"));
 Router.go("pgLogin");

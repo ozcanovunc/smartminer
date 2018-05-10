@@ -1,95 +1,95 @@
 {
 	"components": [
 		{
-			"type": "Page",
+			"className": ".page",
 			"id": "269e-b020-1894-3e55",
 			"initialized": true,
-			"userProps": {},
-			"className": ".page",
-			"version": "6.5.3-rc.16",
 			"props": {
-				"name": "pgWait",
 				"children": [
 					"3e0b-af7f-0310-7b24",
 					"7032-034e-35f7-ce13",
 					"0566-d2bb-52cd-fb39"
 				],
-				"parent": null,
-				"orientation": "PORTRAIT"
-			}
-		},
-		{
-			"type": "StatusBar",
-			"id": "3e0b-af7f-0310-7b24",
+				"name": "pgWait",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
 			"userProps": {},
-			"className": ".statusBar",
-			"props": {
-				"name": "statusBar",
-				"children": [],
-				"parent": "269e-b020-1894-3e55",
-				"isRemovable": false
-			}
+			"version": "6.7.1"
 		},
 		{
-			"type": "HeaderBar",
+			"className": ".statusBar",
+			"id": "3e0b-af7f-0310-7b24",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "269e-b020-1894-3e55"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".headerBar",
 			"id": "7032-034e-35f7-ce13",
-			"userProps": {
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "269e-b020-1894-3e55",
 				"title": "newPage001"
 			},
-			"className": ".headerBar",
-			"props": {
-				"name": "headerBar",
-				"title": "newPage001",
-				"children": [],
-				"parent": "269e-b020-1894-3e55",
-				"isRemovable": false
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "newPage001"
 			}
 		},
 		{
-			"type": "FlexLayout",
-			"id": "0566-d2bb-52cd-fb39",
-			"userProps": {},
 			"className": ".flexLayout #pgWait.flRoot",
+			"id": "0566-d2bb-52cd-fb39",
 			"props": {
-				"name": "flMain",
 				"children": [
 					"3665-6c5c-2049-16a5",
 					"8980-662c-fa31-55ab"
 				],
+				"name": "flMain",
 				"parent": "269e-b020-1894-3e55"
-			}
+			},
+			"type": "FlexLayout",
+			"userProps": {}
 		},
 		{
-			"type": "Label",
+			"className": ".label #pgLogin-lblMain",
 			"id": "3665-6c5c-2049-16a5",
-			"userProps": {
-				"usePageVariable": true,
-				"alpha": 1,
+			"props": {
+				"children": [],
+				"name": "lblSearch",
+				"parent": "0566-d2bb-52cd-fb39",
 				"text": "S e a r c h i n g   f o r   o p p o n e n t",
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
+				"alpha": 1,
 				"font": {
 					"family": "Nunito",
 					"size": 16
-				}
-			},
-			"className": ".label #pgLogin-lblMain",
-			"props": {
-				"name": "lblSearch",
+				},
 				"text": "S e a r c h i n g   f o r   o p p o n e n t",
-				"usePageVariable": true,
-				"children": [],
-				"parent": "0566-d2bb-52cd-fb39"
+				"usePageVariable": true
 			}
 		},
 		{
-			"type": "ActivityIndicator",
-			"id": "8980-662c-fa31-55ab",
-			"userProps": {},
 			"className": ".activityIndicator #pgWait.activity",
+			"id": "8980-662c-fa31-55ab",
 			"props": {
-				"name": "activity",
 				"children": [],
+				"name": "activity",
 				"parent": "0566-d2bb-52cd-fb39"
-			}
+			},
+			"type": "ActivityIndicator",
+			"userProps": {}
 		}
 	]
 }

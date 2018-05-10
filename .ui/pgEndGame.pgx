@@ -1,135 +1,135 @@
 {
 	"components": [
 		{
-			"type": "Page",
+			"className": " .page",
 			"id": "eea3-e1f9-b27e-4cb0",
 			"initialized": true,
-			"userProps": {},
-			"className": " .page",
-			"version": "6.5.3-rc.16",
 			"props": {
-				"name": "pgEndGame",
 				"children": [
 					"da89-ce3c-b459-99ad",
 					"1011-3e8b-484d-cee4",
 					"fd3a-95ef-397a-27a4"
 				],
-				"parent": null,
-				"orientation": "PORTRAIT"
-			}
-		},
-		{
-			"type": "StatusBar",
-			"id": "da89-ce3c-b459-99ad",
+				"name": "pgEndGame",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
 			"userProps": {},
-			"className": " .statusBar",
-			"props": {
-				"name": "statusBar",
-				"children": [],
-				"parent": "eea3-e1f9-b27e-4cb0",
-				"isRemovable": false
-			}
+			"version": "6.7.1"
 		},
 		{
-			"type": "HeaderBar",
+			"className": " .statusBar",
+			"id": "da89-ce3c-b459-99ad",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "eea3-e1f9-b27e-4cb0"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": " .headerBar",
 			"id": "1011-3e8b-484d-cee4",
-			"userProps": {
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "eea3-e1f9-b27e-4cb0",
 				"title": "newPage001"
 			},
-			"className": " .headerBar",
-			"props": {
-				"name": "headerBar",
-				"title": "newPage001",
-				"children": [],
-				"parent": "eea3-e1f9-b27e-4cb0",
-				"isRemovable": false
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "newPage001"
 			}
 		},
 		{
-			"type": "FlexLayout",
-			"id": "fd3a-95ef-397a-27a4",
-			"userProps": {
-				"left": 0,
-				"top": 0
-			},
 			"className": ".flexLayout .flRoot",
+			"id": "fd3a-95ef-397a-27a4",
 			"props": {
-				"name": "flRoot",
 				"children": [
 					"4078-7705-0ae9-f069",
 					"a749-2a3d-e3da-ac02",
 					"9e5e-f4f1-f47f-c4bd"
 				],
+				"name": "flRoot",
 				"parent": "eea3-e1f9-b27e-4cb0"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"left": 0,
+				"top": 0
 			}
 		},
 		{
-			"type": "ImageView",
+			"className": ".imageView",
 			"id": "4078-7705-0ae9-f069",
+			"props": {
+				"children": [],
+				"name": "imgMain",
+				"parent": "fd3a-95ef-397a-27a4"
+			},
+			"type": "ImageView",
 			"userProps": {
 				"imageFillType": "ASPECTFIT",
 				"width": null
-			},
-			"className": ".imageView",
-			"props": {
-				"name": "imgMain",
-				"children": [],
-				"parent": "fd3a-95ef-397a-27a4"
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label #pgLogin-lblMain",
 			"id": "a749-2a3d-e3da-ac02",
+			"props": {
+				"children": [],
+				"name": "lblMain",
+				"parent": "fd3a-95ef-397a-27a4",
+				"text": null,
+				"usePageVariable": true
+			},
+			"type": "TextView",
 			"userProps": {
-				"usePageVariable": true,
 				"alpha": 1,
 				"font": {
 					"family": "Nunito",
 					"size": 26
-				}
-			},
-			"className": ".label #pgLogin-lblMain",
-			"props": {
-				"name": "lblMain",
-				"text": null,
-				"usePageVariable": true,
-				"children": [],
-				"parent": "fd3a-95ef-397a-27a4"
+				},
+				"usePageVariable": true
 			}
 		},
 		{
-			"type": "FlexLayout",
-			"id": "9e5e-f4f1-f47f-c4bd",
-			"userProps": {},
 			"className": ".flexLayout #pgLogin-flButton",
+			"id": "9e5e-f4f1-f47f-c4bd",
 			"props": {
-				"name": "flButton",
 				"children": [
 					"7ebd-5678-dcce-bdb9"
 				],
+				"name": "flButton",
 				"parent": "fd3a-95ef-397a-27a4"
-			}
+			},
+			"type": "FlexLayout",
+			"userProps": {}
 		},
 		{
-			"type": "Button",
+			"className": ".button #pgLogin-btnStart .pink-dark",
 			"id": "7ebd-5678-dcce-bdb9",
-			"userProps": {
+			"props": {
+				"children": [],
+				"name": "btnStart",
+				"parent": "9e5e-f4f1-f47f-c4bd",
 				"text": "N E W  M A T C H",
-				"left": 0,
-				"top": 0,
-				"usePageVariable": true,
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
 				"alpha": 1,
 				"font": {
 					"family": "Nunito"
-				}
-			},
-			"className": ".button #pgLogin-btnStart .pink-dark",
-			"props": {
-				"name": "btnStart",
+				},
+				"left": 0,
 				"text": "N E W  M A T C H",
-				"usePageVariable": true,
-				"children": [],
-				"parent": "9e5e-f4f1-f47f-c4bd"
+				"top": 0,
+				"usePageVariable": true
 			}
 		}
 	]

@@ -1,16 +1,10 @@
 {
 	"components": [
 		{
-			"type": "Page",
+			"className": ".page",
 			"id": "80eb-e142-756a-8676",
 			"initialized": true,
-			"userProps": {
-				"backgroundColor": "rgba( 0, 0, 0, 1 )"
-			},
-			"className": ".page",
-			"version": "6.5.3-rc.16",
 			"props": {
-				"name": "pgLogin",
 				"children": [
 					"0ed5-5f78-d155-c0aa",
 					"742b-33d4-cccb-940a",
@@ -18,166 +12,172 @@
 					"d3c5-fcf6-58ac-9f3e",
 					"499b-e9ef-de1b-7e20"
 				],
-				"parent": null,
-				"orientation": "PORTRAIT"
-			}
+				"name": "pgLogin",
+				"orientation": "PORTRAIT",
+				"parent": null
+			},
+			"type": "Page",
+			"userProps": {
+				"backgroundColor": "rgba( 0, 0, 0, 1 )"
+			},
+			"version": "6.7.1"
 		},
 		{
-			"type": "StatusBar",
-			"id": "0ed5-5f78-d155-c0aa",
-			"userProps": {
-				"visible": false
-			},
 			"className": ".statusBar",
+			"id": "0ed5-5f78-d155-c0aa",
 			"props": {
-				"name": "statusBar",
 				"children": [],
-				"parent": "80eb-e142-756a-8676",
-				"isRemovable": false
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "80eb-e142-756a-8676"
+			},
+			"type": "StatusBar",
+			"userProps": {
+				"visible": false
 			}
 		},
 		{
-			"type": "HeaderBar",
+			"className": ".headerBar",
 			"id": "742b-33d4-cccb-940a",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "80eb-e142-756a-8676",
+				"title": "newPage001"
+			},
+			"type": "HeaderBar",
 			"userProps": {
 				"title": "newPage001",
 				"visible": false
-			},
-			"className": ".headerBar",
-			"props": {
-				"name": "headerBar",
-				"title": "newPage001",
-				"children": [],
-				"parent": "80eb-e142-756a-8676",
-				"isRemovable": false
 			}
 		},
 		{
-			"type": "FlexLayout",
-			"id": "005e-cdba-ad19-2769",
-			"userProps": {},
 			"className": ".flexLayout .flRoot",
+			"id": "005e-cdba-ad19-2769",
 			"props": {
-				"name": "flRoot",
 				"children": [
 					"22ad-22bb-06da-8f99",
 					"9cc7-ca4e-6af0-453c",
 					"32a9-3d1a-7d16-f89f"
 				],
+				"name": "flRoot",
 				"parent": "80eb-e142-756a-8676"
-			}
-		},
-		{
-			"type": "ImageView",
-			"id": "22ad-22bb-06da-8f99",
-			"userProps": {
-				"imageFillType": "ASPECTFIT",
-				"width": null,
-				"image": "diamond.png"
 			},
+			"type": "FlexLayout",
+			"userProps": {}
+		},
+		{
 			"className": ".imageView",
+			"id": "22ad-22bb-06da-8f99",
 			"props": {
-				"name": "imgMain",
 				"children": [],
+				"name": "imgMain",
 				"parent": "005e-cdba-ad19-2769"
+			},
+			"type": "ImageView",
+			"userProps": {
+				"image": "diamond.png",
+				"imageFillType": "ASPECTFIT",
+				"width": null
 			}
 		},
 		{
-			"type": "Label",
+			"className": ".label #pgLogin-lblMain",
 			"id": "9cc7-ca4e-6af0-453c",
-			"userProps": {
+			"props": {
+				"children": [],
+				"name": "lblMain",
+				"parent": "005e-cdba-ad19-2769",
 				"text": "S M A R T M I N E R",
-				"usePageVariable": true,
+				"usePageVariable": true
+			},
+			"type": "TextView",
+			"userProps": {
 				"font": {
 					"family": "Nunito",
 					"size": 26
-				}
-			},
-			"className": ".label #pgLogin-lblMain",
-			"props": {
-				"name": "lblMain",
+				},
 				"text": "S M A R T M I N E R",
-				"usePageVariable": true,
-				"children": [],
-				"parent": "005e-cdba-ad19-2769"
+				"usePageVariable": true
 			}
 		},
 		{
-			"type": "FlexLayout",
-			"id": "32a9-3d1a-7d16-f89f",
-			"userProps": {},
 			"className": ".flexLayout #pgLogin-flButton",
+			"id": "32a9-3d1a-7d16-f89f",
 			"props": {
-				"name": "flButton",
 				"children": [
 					"cbb7-eca2-1e90-235c"
 				],
+				"name": "flButton",
 				"parent": "005e-cdba-ad19-2769"
-			}
+			},
+			"type": "FlexLayout",
+			"userProps": {}
 		},
 		{
-			"type": "Button",
+			"className": ".button #pgLogin-btnStart .pink-dark",
 			"id": "cbb7-eca2-1e90-235c",
-			"userProps": {
+			"props": {
+				"children": [],
+				"name": "btnStart",
+				"parent": "32a9-3d1a-7d16-f89f",
 				"text": "G O",
-				"left": 0,
-				"top": 0,
-				"usePageVariable": true,
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
 				"font": {
 					"family": "Nunito"
-				}
-			},
-			"className": ".button #pgLogin-btnStart .pink-dark",
-			"props": {
-				"name": "btnStart",
+				},
+				"left": 0,
 				"text": "G O",
-				"usePageVariable": true,
-				"children": [],
-				"parent": "32a9-3d1a-7d16-f89f"
+				"top": 0,
+				"usePageVariable": true
 			}
 		},
 		{
-			"type": "TextArea",
+			"className": ".textArea",
 			"id": "d3c5-fcf6-58ac-9f3e",
-			"userProps": {
-				"usePageVariable": true,
+			"props": {
+				"children": [],
+				"name": "taUsername",
+				"parent": "80eb-e142-756a-8676",
 				"text": "dummy",
-				"width": null,
-				"height": null,
-				"visible": false,
+				"usePageVariable": true
+			},
+			"type": "TextArea",
+			"userProps": {
 				"font": {
 					"size": 0
-				}
-			},
-			"className": ".textArea",
-			"props": {
-				"name": "taUsername",
+				},
+				"height": null,
 				"text": "dummy",
 				"usePageVariable": true,
-				"children": [],
-				"parent": "80eb-e142-756a-8676"
+				"visible": false,
+				"width": null
 			}
 		},
 		{
-			"type": "TextArea",
+			"className": ".textArea",
 			"id": "499b-e9ef-de1b-7e20",
-			"userProps": {
-				"visible": false,
-				"usePageVariable": true,
+			"props": {
+				"children": [],
+				"name": "taPassword",
+				"parent": "80eb-e142-756a-8676",
 				"text": "dummy",
-				"width": null,
-				"height": null,
+				"usePageVariable": true
+			},
+			"type": "TextArea",
+			"userProps": {
 				"font": {
 					"size": 0
-				}
-			},
-			"className": ".textArea",
-			"props": {
-				"name": "taPassword",
+				},
+				"height": null,
 				"text": "dummy",
 				"usePageVariable": true,
-				"children": [],
-				"parent": "80eb-e142-756a-8676"
+				"visible": false,
+				"width": null
 			}
 		}
 	]

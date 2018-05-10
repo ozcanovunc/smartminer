@@ -1,0 +1,60 @@
+{
+	"components": [
+		{
+			"className": ".flexLayout",
+			"id": "c1aa-2617-0f0b-5863",
+			"props": {
+				"children": [
+					"8c56-a5dc-b700-d018",
+					"fc97-802a-2579-4024"
+				],
+				"name": "flPlayer",
+				"parent": "57f4-201f-4bfc-5fc6"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {},
+				"height": 118.49193572998047,
+				"left": 35.50724453396268,
+				"top": 21.08968628777398,
+				"width": 270.53140004475915
+			}
+		},
+		{
+			"className": ".label .flPlayerLabel",
+			"id": "8c56-a5dc-b700-d018",
+			"props": {
+				"children": [],
+				"name": "lblName",
+				"parent": "c1aa-2617-0f0b-5863",
+				"text": "USERNAME",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "TextView",
+			"userProps": {}
+		},
+		{
+			"className": ".label .flPlayerLabel",
+			"id": "fc97-802a-2579-4024",
+			"props": {
+				"children": [],
+				"name": "lblIcon",
+				"parent": "c1aa-2617-0f0b-5863",
+				"text": "👷‍♂️",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "TextView",
+			"userProps": {}
+		}
+	]
+}

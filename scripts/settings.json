@@ -1,12 +1,15 @@
 {
 	"config": {
 		"theme": {
-			"currentTheme": "Defaults",
+			"currentTheme": "test7Theme",
 			"themes": [
 				"Defaults",
-				"smartminerTheme"
-			]
+				"defaultTheme",
+				"smartminerTheme",
+				"test7Theme"
+			],
+			"baseTheme": "test7Theme"
 		},
-		"version": "6.5.3-rc.16"
+		"version": "6.7.1"
 	}
 }
